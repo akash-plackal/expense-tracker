@@ -1,0 +1,29 @@
+.container {
+  background-color: #fb978a;
+  color: white;
+
+  width: 35%;
+  height: 10rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.8px 2.1px -1px rgba(0, 0, 0, 0.101),
+    0 1.3px 7.1px -1px rgba(0, 0, 0, 0.141), 0 2px 32px -1px rgba(0, 0, 0, 0.29);
+}
+
+.Balance {
+  /* border: 1px solid green; */
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.exp-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}

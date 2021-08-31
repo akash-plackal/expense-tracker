@@ -1,0 +1,11 @@
+.list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.list {
+  /* border: 1px solid; */
+}
