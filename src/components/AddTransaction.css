@@ -37,6 +37,7 @@ form input {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   transition: button 1s;
+  margin-bottom: 1rem;
 }
 
 .btn:hover {
