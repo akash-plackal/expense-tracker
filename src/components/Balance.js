@@ -6,17 +6,31 @@ export const Balance = () => {
   const { transactions } = useContext(GlobalContext);
 
   const amount = transactions.map((trans) => trans.amount);
-  const total = amount.reduce((acc, item) => (acc += item)).toFixed(2);
+  const total =
+    amount.length > 1
+      ? amount.reduce((acc, item) => (acc += item), 0).toFixed(2)
+      : amount[0] > 0
+      ? amount[0]
+      : "";
 
-  const income = amount
-    .filter((amt) => amt > 0)
-    .reduce((acc, item) => (acc += item))
-    .toFixed(2);
+  const income =
+    amount.length > 1
+      ? amount
+          .filter((amt) => amt > 0)
+          .reduce((acc, item) => (acc += item), 0)
+          .toFixed(2)
+      : amount[0] > 0
+      ? amount[0]
+      : "";
   const expense =
-    amount
-      .filter((amt) => amt < 0)
-      .reduce((acc, item) => (acc += item))
-      .toFixed(2) * -1;
+    amount.length > 1
+      ? amount
+          .filter((amt) => amt < 0)
+          .reduce((acc, item) => (acc += item), 0)
+          .toFixed(2) * -1
+      : amount[0] < 0
+      ? amount[0]
+      : "";
 
   return (
     <div className="container">

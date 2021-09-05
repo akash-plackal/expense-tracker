@@ -23,6 +23,7 @@
   justify-content: space-between;
   font-size: 1.1rem;
   font-family: "Lato", sans-serif;
+  position: relative;
 
   list-style: none;
 }
@@ -57,6 +58,18 @@
   color: #d9534f;
 }
 
-/* .transaction button {
-  margin-left: -200px;
-} */
+.delete-btn {
+  position: absolute;
+  right: 18.5rem;
+  border-radius: 5px;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: none;
+  /* background-color: rgb(255, 226, 231); */
+  background-color: #3787c0;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #d9544fcc;
+}
