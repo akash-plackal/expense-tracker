@@ -2,7 +2,7 @@
   background-color: #fb978a;
   color: white;
 
-  width: 35%;
+  width: 90%;
   height: 10rem;
   margin: 0 auto;
   border-radius: 1rem;
@@ -26,4 +26,10 @@
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 35%;
+  }
 }
