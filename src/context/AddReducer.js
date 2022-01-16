@@ -1,4 +1,6 @@
 const AddReducer = (state, action) => {
+  console.log(state);
+
   switch (action.type) {
     case "deleteTransaction":
       return {
